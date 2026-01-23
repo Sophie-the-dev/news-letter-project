@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --lang: Roboto;
+    --colors-white: #fff;
+	--colors-black: #000;
+	--colors-blue-800: #242742;
+	--colors-blue-700: #36384d;
+	--colors-red: #ff6155;
+	--colors-grey: #949494;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
