@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --lang: Roboto;
+    --colors-white: #fff;
+	--colors-black: #000;
+	--colors-blue-800: #242742;
+	--colors-blue-700: #36384d;
+	--colors-red: #ff6155;
+	--colors-grey: #949494;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{
+    width: 1440px;
+    height: 100vh;
+    background:#242742;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.success-cont{
+    
+    border-radius: 36px;
+    padding: 64px;
+    width: 504px;
+    height: 520px;
+    box-shadow: 0 15px 60px 0 rgba(0, 0, 0, 0.25);
+    background: var(--colors-white);
+}
+.inner-cont{
+    width: 376px;
+    height: 400px;
+}
+h1{
+    font-family: var(--lang);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 100%;
+    color: var(--colors-blue-800);
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+p{
+    font-family: var(--lang);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--colors-blue-800);
+    margin-bottom: 32px;
+}   
+button{
+    border-radius: 8px;
+    width: 376px;
+    height: 56px;
+    background: var(--colors-blue-800);
+    font-family: var(--lang);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--colors-white);
+    transition: 0.7s;
+    cursor: pointer;
+}
+button:hover{
+    background-color:var(--colors-grey);
+}

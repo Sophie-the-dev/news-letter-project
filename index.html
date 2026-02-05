@@ -27,14 +27,20 @@
                 </div>
             </div>
             <div class="email-cont"><!--container for email confirmation & subscribe button-->
+                <div class="email-and-error">
                 <p id="email">Email address</p>
-                <input type="email" id="email-input" placeholder="email@company.com">
-                <button id="btn">Subscribe to monthly newsletter</button>
+                <p id="error-message">Valid email required</p><!--pop up, if error occurs-->
+                </div> 
+                <form id="email-form" novalidate>
+                <input type="email" id="email-input" placeholder="email@company.com" required>
+                <button id="btn" type="submit">Subscribe to monthly newsletter</button>
+                </form>
             </div>
         </div>
         <div class="img-container">
             <img src="Image.png" alt=""></div>
        </div> 
     </main>
+<script src="main.js"></script>
 </body>
 </html>
