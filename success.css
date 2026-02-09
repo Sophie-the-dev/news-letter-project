@@ -23,7 +23,6 @@ body{
     justify-content: center;
 }
 .success-cont{
-    
     border-radius: 36px;
     padding: 64px;
     width: 504px;
@@ -68,4 +67,40 @@ button{
 }
 button:hover{
     background-color:var(--colors-grey);
+}
+@media(max-width:400px){
+   body{
+    width: 375px;
+    height: 842px;
+    background-color: #fff;
+   }
+   .success-cont{
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+   }
+   .inner-cont{
+    margin: 0 auto;
+    width: 327px;
+    height: 623px;
+   }
+   h1{
+    font-family: var(--lang);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    color: var(--colors-blue-800);
+   }
+   p{
+    font-family: var(--lang);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--colors-blue-800);
+   }
+   #dismiss-btn{
+    width: 327px;
+    height: 56px;
+    margin-top: 200px;
+   }
 }
