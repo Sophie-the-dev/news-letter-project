@@ -15,7 +15,7 @@
     outline: none;
 }
 body{
-    width: 1440px;
+    width: 100%;
     height: 100vh;
     background-color: var(--colors-blue-700);
     display: flex;
@@ -60,7 +60,7 @@ main{
 }
 #email-input{
     padding: 16px 24px;
-    max-width: 376px;
+    max-width: 528px;
     width: 100%;
     height: 56px;
     border-radius:10px;
@@ -73,7 +73,7 @@ main{
 #btn{
     margin-top: 24px;
     border-radius: 8px;
-    max-width: 376px;
+    max-width: 528px;
     width:100%;
     height: 56px;
     background: var(--colors-blue-800);
@@ -118,6 +118,9 @@ p{
 .email-cont{
     margin-top: 32px;
 }
+.advantage p{
+    padding-left: 16px;
+}
 .advantage:nth-of-type(2){
     margin-top: 8px;
     margin-bottom: 8px;
@@ -144,8 +147,90 @@ p{
     line-height: 150%;
     text-align: right;
     color: var(--colors-red);
+    width: fit-content;
 }
 .invalid-input{
     border: 1px solid var(--colors-red);
     background: #ffe7e6
+}
+@media(max-width:768px) {
+    main{
+        height:100vh;
+        align-items: center;
+    }
+    .main-container{
+        border-radius: 36px;
+        padding: 40px;
+        max-width: 608px;
+        width:100%;
+        height: 878px;
+        
+    }
+    .main-info{
+        margin: 0;
+        padding-top: 380px;
+        max-width: 528px;
+        width: 100%;
+        height: 394px;
+        position: absolute;
+    }
+    .main-info p{
+        max-width:528px;
+        width: 100%;
+      
+    }
+    h1{
+        max-width:528px;
+        width:100%;
+        
+    }
+    .about-advantages{
+        max-width:528px;
+        width:100%;
+        margin-top: 24px;
+    }
+    .email-cont{
+        max-width:528px;
+        width:100%;
+        margin-top: 24px;
+    }
+    .img-container{
+        max-width:528px;
+        width:100%;
+        height:358px;
+        position: relative;
+    }
+    .img-container img{
+        height:358px;
+        max-width:528px;
+        width:100%;
+        margin: 0;
+    }
+    #email-form{
+        margin-top: 24px;
+        max-width:528px;
+        width:100%
+    }
+    #email-input{
+        padding: 16px 24px;
+        max-width:528px;
+        width:100%;
+        height: 56px;
+    }
+    
+}
+@media(max-width:400px){
+    body{
+        background-color: #fff;
+    }
+    .img-container{
+        border-radius: 0;
+    }
+    .main-container{
+        padding: 0;
+    }
+    .main-info{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 }
